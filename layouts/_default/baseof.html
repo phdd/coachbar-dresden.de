@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
-    <meta charset="utf-8" />
-    <title>
-      {{ .Title }}
-    </title>
-    <meta name="description" content="{{ .Description }}" />
-    {{/* styles */}}
-    {{ $options := dict "inlineImports" true }}
-    {{ $styles := resources.Get "css/styles.css" }}
-    {{ $styles = $styles | resources.PostCSS $options }}
-    {{ if hugo.IsProduction }}
-      {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
-    {{ end }}
-    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+    {{ partial "head" . }}
   </head>
-  <body class="my-10">
-    <div class="container px-4 lg:mx-auto">
+  <body>
+    <header>
+      {{ partial "header" . }}
+    </header>
+    <main id="main">
       {{ block "main" . }}{{ end }}
-    </div>
+    </main>
+    <footer>
+      {{ partial "footer" . }}
+    </footer>
   </body>
 </html>

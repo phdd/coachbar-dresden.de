@@ -22,6 +22,7 @@
 		"vscode": {
 			"extensions": [
 				"bungcip.better-toml",
+				"budparr.language-hugo-vscode",
 				"eamodio.gitlens"
 			]
 		}

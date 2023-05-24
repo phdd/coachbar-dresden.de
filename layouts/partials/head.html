@@ -1,0 +1,17 @@
+<title>
+  {{ .Title }}
+</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="Author" content="Coachbar">
+<meta name="description" content="{{ .Description }}" />
+
+{{ $options := dict "inlineImports" true }}
+{{ $styles := resources.Get "css/styles.css" }}
+{{ $styles = $styles | resources.PostCSS $options }}
+{{ if hugo.IsProduction }}
+  {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+
+<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
