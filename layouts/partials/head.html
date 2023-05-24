@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0">
 <meta name="Author" content="Coachbar">
-<meta name="description" content="{{ .Description }}" />
+<meta name="description" content="{{ .Description }}">
 
 {{ $options := dict "inlineImports" true }}
 {{ $styles := resources.Get "css/styles.css" }}
@@ -14,4 +14,4 @@
   {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
 
-<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+<link href="{{ $styles.RelPermalink }}" rel="stylesheet">
