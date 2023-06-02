@@ -1,0 +1,12 @@
+/* nav {
+  @apply bg-[url('/bg-logo.png')] h-[450px];
+  @apply bg-local bg-no-repeat bg-top bg-auto;
+} */
+
+a {
+  @apply opacity-80 hover:opacity-100 text-primary;
+}
+
+a.active {
+  @apply opacity-100 font-bold;
+}

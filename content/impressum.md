@@ -1,9 +1,6 @@
 ---
-title: coachbar Dresden
-layout: single
+title: Impressum
 ---
-
-## Overview
 
 Incididunt nulla ea consequat cupidatat dolore culpa irure Lorem ea veniam. Amet dolore esse labore magna. Dolore consequat incididunt voluptate sit esse fugiat. Culpa voluptate eiusmod commodo consequat exercitation ad do ex voluptate consectetur.
 

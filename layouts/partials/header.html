@@ -1,5 +1,39 @@
-<nav>
-  <ul>
-    <li>Home</li>
-  </ul>
+<section class="hidden md:flex items-center">
+  <img src="/bg-logo.png" alt="coachbar Logo" class="mx-auto" />
+</section>
+<nav class="relative bg-white shadow-lg md:shadow-md border-solid border-0 border-y-2 border-gray-300">
+  <div class="container mx-auto max-w-4xl">
+    <div class="flex flex-row justify-between items-center py-2 px-4 bg-light-blue-grey md:bg-white">
+      <a href="/" class="block md:hidden text-lg text-primary font-bold">coachbar</a>
+      <div class="group flex flex-col items-center">
+        <a class="p-2 md:hidden">
+          <svg fill="currentColor"
+              class="h-10 fill-primary"
+              viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </a>
+        <div class="hidden group-hover:block md:block absolute md:static inset-x-0 top-16 py-3 shadow-lg md:shadow-none bg-light-blue-grey md:bg-white">
+          <div class="flex flex-col md:flex-row py-1 gap-6 px-4 md:px-0 font-bold">
+            <a class="hidden md:flex flex-col md:flex-row {{ if eq .RelPermalink "/" }}active{{ end }}" href="/">
+              coachbar
+            </a>
+            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/anlässe" }}active{{ end }}" href="/anlässe">
+              Anlässe
+            </a>
+            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/philosophie" }}active{{ end }}" href="/philosophie">
+              Philosophie
+            </a>
+            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/praxis" }}active{{ end }}" href="/praxis">
+              Praxis
+            </a>
+            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/lesbar" }}active{{ end }}" href="/lesbar">
+              lesbar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
