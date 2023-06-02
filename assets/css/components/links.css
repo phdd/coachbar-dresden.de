@@ -3,7 +3,7 @@
   @apply bg-local bg-no-repeat bg-top bg-auto;
 } */
 
-a {
+a, a.svg {
   @apply opacity-80 hover:opacity-100 text-primary;
 }
 
