@@ -1,0 +1,26 @@
+{{ define "main" }}
+<style>
+  .emoji-404{
+  
+    position: relative;
+    animation: mymove 2.5s infinite;
+  }
+  
+  @keyframes mymove {
+    33%  {top: 0px;}
+    66%  {top: -20px;}
+    100% {top: 0px}
+  }
+</style>
+
+<div class="justify-center my-10 prose-xl">
+  <center class="m-auto">
+    {{ partial "404.svg" . }}
+    <p class="text-primary text-6xl">4 0 4</p>
+    <p class="text-primary text-xl">Die aufgerufene Seite existiert nicht.</p>
+  </center>
+  <center class="mt-6">
+    <a href="{{ "" | relURL }}" class="">Zur Startseite</a>
+  </center>
+</div>
+{{ end }}

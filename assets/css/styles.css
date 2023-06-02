@@ -5,6 +5,6 @@
 @import "components/all.css";
 
 body {
-  @apply bg-light-blue-grey;
+  @apply bg-pale-grey;
   @apply bg-[url('/bg-body.png')] bg-repeat-x bg-top;
 }
