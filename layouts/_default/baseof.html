@@ -4,18 +4,20 @@
     {{ partial "head" . }}
   </head>
   <body class="relative">
-    {{- partial "dev/dev-tools.html" . -}}
+    {{/*  {{- partial "dev/dev-tools.html" . -}}  */}}
     <header>
       {{ partial "header" . }}
     </header>
-    <main id="main" class="container mx-auto max-w-4xl prose lg:prose-lg bg-white">
-      <div class="px-6 pt-8 pb-2">
-        {{ block "main" . }}{{ end }}
+    <main id="main" class="bg-white w-full">
+      <div class="container mx-auto max-w-4xl prose lg:prose-lg">
+        <div class="px-6 pt-8 pb-2">
+          {{ block "main" . }}{{ end }}
+        </div>
       </div>
     </main>
-    <footer class="bg-slate-100 shadow-inner">
+    <footer class="bg-pale-grey shadow-inner">
       <div class="container mx-auto max-w-4xl">
-        <div class="px-4 py-8">
+        <div class="px-6 py-8">
           {{ partial "footer" . }}
         </div>
       </div>
