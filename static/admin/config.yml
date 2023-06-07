@@ -1,22 +1,47 @@
+# TODO
+# local_backend: true
+
 backend:
+  # name: git-gateway
   name: github
   repo: phdd/coachbar-dresden.de
-  branch: tailwind-from-scratch # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
 
-# This line should *not* be indented
+locale: 'de'
 media_folder: "static/media" # Media files will be stored in the repo under images/uploads
 public_folder: "/media" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "content/blog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
-      - { label: 'Titel', name: 'title', widget: 'string' }
-      - { label: 'Veröffentlichung', name: 'date', widget: 'datetime' }
-      - { label: 'Beschreibung', name: 'description', widget: 'string' }
-      - { label: 'Inhalt', name: 'body', widget: 'markdown' }
+  - name: "statische-seiten"
+    label: "statische Seiten"
+    files:
+      - label: "Startseite (coachbar)"
+        name: "coachbar"
+        file: "data/home.yml"
+        editor:
+          preview: false
+        fields:
+          - { label: Überschrift, name: title, widget: string }
+          - { label: Intro, name: introText, widget: text }
+          - { label: Portrait, name: portrait, widget: image, default: "/media/portrait.png", allow_multiple: false, hint: "490 x 640 ist optimal" }
+          - label: Leistungen
+            name: features
+            widget: list
+            fields:
+              - { label: Leistung, name: title, widget: string }
+              - { label: Icon, name: icon, widget: string, hint: "Die Liste von verfügbaren Icons ist unter https://fontawesome.com/search?o=r&m=free&s=solid zu finden" }
+              - { label: Link, name: link, widget: hidden }
+              - { label: Kurzbeschreibung, name: descr, widget: text }
+
+  # - name: "blog" # Used in routes, e.g., /admin/collections/blog
+  #   label: "Blog" # Used in the UI
+  #   folder: "content/blog" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   editor:
+  #     preview: false
+  #   fields: # The fields for each document, usually in front matter
+  #     - { label: 'Titel', name: 'title', widget: 'string' }
+  #     - { label: 'Veröffentlichung', name: 'date', widget: 'datetime' }
+  #     - { label: 'Beschreibung', name: 'description', widget: 'string' }
+  #     - { label: 'Inhalt', name: 'body', widget: 'markdown' }

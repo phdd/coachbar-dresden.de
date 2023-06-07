@@ -4,7 +4,8 @@
 		"url": "https://github.com/phdd/coachbar-dresden.de.git"
 	},
 	"scripts": {
-		"start": "hugo server --disableFastRender"
+		"start": "hugo server --disableFastRender",
+		"admin": "npx netlify-cms-proxy-server"
 	},
 	"devDependencies": {
 		"@tailwindcss/typography": "^0.5.9",

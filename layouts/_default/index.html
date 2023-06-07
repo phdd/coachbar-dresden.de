@@ -6,7 +6,7 @@
             <div class="prose pt-4 md:pt-0">
                 <h1>{{ $data.title }}</h1>
                 <p class="text-lg">
-                    {{ $data.heroText }}
+                    {{ $data.introText | markdownify }}
                 </p>
             </div>
             <ul class="space-y-4 py-10">
@@ -27,7 +27,7 @@
             </ul>
         </section>
         <div class="w-full md:w-2/4 py-0 md:pt-12">
-            <img src="portrait.png" alt="Beraterin" class="max-w-full h-auto mx-auto">
+            <img src="{{ $data.portrait }}" alt="Beraterin" class="max-w-full h-auto mx-auto">
         </div>
     </div>
 </article>
