@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "components/all.css";
-
 body {
   @apply bg-tertiary;
   @apply bg-[url('/bg-body.png')] bg-repeat-x bg-top;
+}
+
+a, a.svg {
+  @apply opacity-80 hover:opacity-100 text-primary;
+}
+
+a.active {
+  @apply opacity-100 font-bold;
+}
+
+li h2 {
+  @apply text-lg font-semibold mb-1 text-primary;
+}
+
+li p {
+  @apply text-base text-gray-600;
+}
+
+.prose h1 {
+  @apply text-2xl font-semibold text-primary;
 }
