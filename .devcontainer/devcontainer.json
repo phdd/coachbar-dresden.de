@@ -5,6 +5,7 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:0-20",
 	"features": {
+		"golang": "latest",
 		"ghcr.io/devcontainers/features/hugo": {
 			"extended": true,
 			"version": "latest"
