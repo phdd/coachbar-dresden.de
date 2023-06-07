@@ -2,8 +2,8 @@
 # local_backend: true
 
 backend:
-  # name: git-gateway
-  name: github
+  name: git-gateway
+  # name: github
   repo: phdd/coachbar-dresden.de
   branch: main # Branch to update (optional; defaults to master)
 
