@@ -26,3 +26,13 @@ li p {
 .prose h1 {
   @apply text-2xl font-semibold text-primary;
 }
+
+a.cta {
+  @apply text-center w-full md:w-min md:rounded-lg py-4 px-6 md:shadow-md bg-secondary;
+  @apply text-lg font-semibold uppercase text-white no-underline;
+  @apply transition-all;
+  @apply hover:shadow-lg hover:shadow-primary/40;
+  @apply focus:opacity-[0.85] focus:shadow-none;
+  @apply active:opacity-[0.85] active:shadow-none;
+  @apply disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
+}

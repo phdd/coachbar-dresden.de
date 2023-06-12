@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $data := $.Site.Data.home }}
-<article>
-    <div class="flex flex-wrap justify-between py-0 pt-2 md:pt-6 md:pb-2 lg:pt-10 lg:pb-8">
+<div class="px-6 py-0 pt-2 md:pt-6 md:pb-2 lg:pt-10">
+    <div class="flex flex-wrap justify-between">
         <section class="w-full md:w-2/4">
             <div class="prose pt-4 md:pt-0">
                 <h1>{{ $data.title }}</h1>
@@ -14,9 +14,9 @@
                 <li>
                     <div class="flex items-start">
                         {{ partial "icons/icon" (dict
-                            "name" .icon
-                            "vendor" "fas"
-                            "className" "w-7 h-7 flex-shrink-0 mr-4 text-secondary" )}}
+                        "name" .icon
+                        "vendor" "fas"
+                        "className" "w-7 h-7 flex-shrink-0 mr-4 text-secondary" )}}
                         <div>
                             <a href="{{ .link }}"><h2>{{ .title | markdownify }}</h2></a>
                             <p>{{ .descr | markdownify }}</p>
@@ -27,8 +27,44 @@
             </ul>
         </section>
         <div class="w-full md:w-2/4 py-0 md:pt-12">
-            <img src="{{ $data.portrait }}" alt="Beraterin" class="max-w-full h-auto mx-auto">
+            <img src="{{ $data.portrait }}" alt="Dr. Bettina Wachter" class="max-w-full h-auto mx-auto">
         </div>
     </div>
-</article>
+</div>
+<div class="flex flex-wrap justify-center md:py-12">
+    <div class="hidden md:block w-1/3">
+        <img src="{{ $data.haltlos }}" alt="Bild einer Pflanze" class="">
+    </div>
+    <section>
+        <div class="prose mx-0 md:ml-14">
+            <div class="px-6 py-12 md:py-6 bg-tertiary md:bg-transparent md:border-solid md:border-2 md:border-tertiary rounded-none md:rounded-lg md:shadow-xl">
+                <h1>systemische Lösungen</h1>
+                <p class="text-lg mb-0">
+                    Coaching ist für uns ein lebendiges Miteinander zwischen Klienten und Coach. Es geht um die Ziele und Aufgaben des Klienten, des Teams oder der Organisation. Wir berücksichtigen dabei Wechselwirkungen und Zusammenhänge zwischen den Lebens- und Arbeitsbereichen.
+                    Um selbst Gestalter des eigenen Lebens zu werden, ermutigen wir dazu, die eigenen Anteile daran zu erkennen, wie sich Lebenssituationen entwickeln, wie wir handeln und welche Entscheidungen wir treffen.
+                    Wir begleiten Sie dabei, Lösungen zu finden und Entwicklungen zu gestalten.
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-around my-0 mb-6 md:my-12">
+                <a href="" class="cta flex gap-4 justify-center items-center">
+                    {{ partial "icons/icon" (dict
+                    "name" "phone"
+                    "vendor" "fas"
+                    "className" "h-8 w-8 text-white" )}}
+                    <span class="whitespace-nowrap">
+                        Rückruf anfordern
+                    </span>
+                </a>
+                <a href="/anlässe/" class="opacity-60 flex items-center py-6">
+                    <span>mehr zu Anlässen erfahren</span>
+                    {{ partial "icons/icon" (dict
+                        "name" "chevron-right"
+                        "vendor" "fas"
+                        "className" "h-4 w-4" )}}
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
 {{ end }}
