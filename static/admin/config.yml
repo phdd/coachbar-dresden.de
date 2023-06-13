@@ -2,8 +2,7 @@
 # local_backend: true
 
 backend:
-  # name: git-gateway
-  name: test-repo
+  name: git-gateway
   repo: phdd/coachbar-dresden.de
   branch: main # Branch to update (optional; defaults to master)
 
@@ -27,8 +26,8 @@ collections:
             summary: "{{fields.title}}"
             fields:
               - { label: Überschrift, name: title, widget: string }
-              - { label: Text, name: introText, widget: text }
-              - { label: Bild, name: portrait, widget: image, default: "/media/portrait.png", allow_multiple: false, hint: "490 x 640 ist optimal" }
+              - { label: Text, name: text, widget: text }
+              - { label: Bild, name: image, widget: image, default: "/media/portrait.png", allow_multiple: false, hint: "490 x 640 ist optimal" }
               - label: Leistungen
                 name: features
                 widget: list
@@ -40,11 +39,11 @@ collections:
           - label: zweiter Abschnitt
             name: second
             widget: object
-            summary: "{{fields.secondTitle}}"
+            summary: "{{fields.title}}"
             fields:
-              - { label: Überschrift, name: secondTitle, widget: string }
-              - { label: Text, name: secondText, widget: text }
-              - { label: Bild, name: haltlos, widget: image, default: "/media/haltlos.png", allow_multiple: false, hint: "400 x 550 ist optimal" }
+              - { label: Überschrift, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Bild, name: image, widget: image, default: "/media/haltlos.png", allow_multiple: false, hint: "400 x 550 ist optimal" }
 
   # - name: "blog" # Used in routes, e.g., /admin/collections/blog
   #   label: "Blog" # Used in the UI
