@@ -33,7 +33,7 @@
 </div>
 <div class="flex flex-wrap justify-center sm:py-12 lg:-ml-20">
     <div class="hidden lg:block w-2/6">
-        <img src="{{ $home.haltlos }}" alt="Bild einer Pflanze" class="transform -scale-x-100">
+        <img src="{{ $home.haltlos }}" alt="Bild einer Pflanze">
     </div>
     <section>
         <div class="prose mx-0 lg:ml-14">
@@ -48,12 +48,12 @@
                     {{ partial "icons/icon" (dict
                     "name" "phone"
                     "vendor" "fas"
-                    "className" "h-8 w-8 text-white" )}}
+                    "className" "h-6 w-6 text-white" )}}
                     <span class="whitespace-nowrap">
                         Rückruf anfordern
                     </span>
                 </a>
-                <a href="/anlässe/" class="opacity-60 flex items-center py-6 gap-2">
+                <a href="/anlässe/" class="opacity-60 flex items-center gap-2">
                     <span>mehr zu Anlässen erfahren</span>
                     {{ partial "icons/icon" (dict
                         "name" "chevron-right"
