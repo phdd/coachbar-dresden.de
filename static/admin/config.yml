@@ -22,7 +22,7 @@ collections:
           preview: false
         fields:
           - label: erster Abschnitt
-            name: first-section
+            name: first
             widget: object
             summary: "{{fields.title}}"
             fields:
@@ -38,7 +38,7 @@ collections:
                   - { label: Link, name: link, widget: hidden }
                   - { label: Kurzbeschreibung, name: descr, widget: text }
           - label: zweiter Abschnitt
-            name: second-section
+            name: second
             widget: object
             summary: "{{fields.secondTitle}}"
             fields:
