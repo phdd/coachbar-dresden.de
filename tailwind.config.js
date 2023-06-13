@@ -9,6 +9,9 @@ module.exports = {
 				'primary': '#2f435b',
 				'secondary': '#00939B',
 				'tertiary': '#E9EEFE'
+			},
+			scale: {
+				'-100': '-1',
 			}
 		}
 	}
