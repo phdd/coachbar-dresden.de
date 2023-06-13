@@ -1,0 +1,48 @@
+<section class="py-16 px-6">
+  <div class="prose">
+    <h1 class="mb-8">Ihr Kontakt zu uns</h1>
+  </div>
+  <form class="grid grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-6">
+    <div class="flex flex-col gap-y-4">
+      <label>
+        <span>Name</span>
+        <input type="text" placeholder="Ihr voller Name">
+      </label>
+      <label>
+        <span>E-Mail</span>
+        <input type="text" placeholder="Ihre geschäftliche E-Mail Adresse">
+      </label>
+      <label>
+        <span>Telefon</span>
+        <input type="text" placeholder="Ihre geschäftliche Telefonnummer">
+      </label>
+      <label class="inline-flex flex-row pt-3 xl:-ml-8">
+        <input type="checkbox" checked="">
+        <span class="ml-3">Ich bitte um Rückruf</span>
+      </label>
+      <label class="inline-flex flex-row pt-1 xl:-ml-8">
+        <input type="checkbox" checked="">
+        <span class="ml-3">
+          Ich akzeptiere die Verarbeitung meiner Daten im Rahmen der
+          <a href="/datenschutz" class="text-secondary">Datenschutzerklärung</a>.
+        </span>
+      </label>
+    </div>
+    <div class="flex flex-col justify-start items-stretch">
+      <label class="flex-grow">
+        <span>Nachricht</span>
+        <textarea rows="9" class="w-auto h-full"
+          placeholder="Ihre Nachricht an Coachbar Dresden"></textarea>
+      </label>
+      <div class="w-auto text-center sm:text-right">
+        <a href="" type="submit" class="mt-6 inline-flex gap-4">
+          {{ partial "icons/icon" (dict
+            "name" "paper-plane"
+            "vendor" "fas"
+            "className" "h-5 w-5 text-white" )}}
+          <span>absenden</span>
+        </a>
+      </div>
+    </div>
+  </form>
+</section>

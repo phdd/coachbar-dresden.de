@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $home := $.Site.Data.home }}
-<section class="px-6 py-0 pt-2 md:pt-6 md:pb-2 lg:pt-10">
+<section class="px-6 py-0 pt-2 md:pt-6 lg:pt-10">
     <div class="flex flex-wrap justify-between">
         <div class="w-full lg:w-2/4">
             <div class="prose pt-4 md:pt-0">
@@ -26,24 +26,24 @@
                 {{ end }}
             </ul>
         </div>
-        <div class="w-full lg:w-2/4 py-0 lg:pt-12">
-            <img src="{{ $home.first.image }}" alt="Dr. Bettina Wachter" class="max-w-full h-auto mx-auto">
+        <div class="w-full lg:w-2/4 py-0 pt-2 lg:pt-14">
+            <img src="{{ $home.first.image }}" alt="Dr. Bettina Wachter" class="max-w-full max-h-80 md:max-h-96 lg:max-h-none mx-auto">
         </div>
     </div>
 </section>
-<section class="flex flex-wrap justify-center sm:py-12 lg:-ml-20">
+<section class="flex flex-wrap justify-center lg:-ml-20">
     <div class="hidden lg:block w-2/6">
-        <img src="{{ $home.second.image }}" alt="Bild einer Pflanze">
+        <img src="{{ $home.second.image }}" alt="Bild einer Pflanze" class="">
     </div>
-    <div>
-        <div class="prose mx-0 lg:ml-14">
+    <div class="flex h-auto items-center">
+        <div class="prose mx-0 lg:ml-14 h-full flex flex-col justify-center">
             <div class="px-6 py-12 sm:py-6 bg-tertiary sm:bg-transparent sm:border-solid sm:border-2 sm:border-tertiary rounded-none sm:rounded-lg sm:shadow-xl">
                 <h1>{{ $home.second.title }}</h1>
                 <p class="mb-0">
                     {{ $home.second.text | markdownify }}
                 </p>
             </div>
-            <div class="flex flex-wrap justify-center my-0 mb-2 sm:my-12 lg:my-12 gap-5">
+            <div class="flex flex-wrap justify-center mt-0 mb-2 sm:mt-12 gap-8">
                 <a href="" class="cta flex gap-4 justify-center items-center">
                     {{ partial "icons/icon" (dict
                     "name" "phone"
@@ -64,4 +64,5 @@
         </div>
     </div>
 </section>
+{{ partial "contact-form" . }}
 {{ end }}

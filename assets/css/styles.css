@@ -15,7 +15,7 @@ a.active {
   @apply opacity-100 font-bold;
 }
 
-li h2 {
+li h2, .prose h2, h2.prose {
   @apply text-lg font-semibold mb-1 text-primary;
 }
 
@@ -30,6 +30,39 @@ li p {
 a.cta {
   @apply text-center w-full sm:w-min sm:rounded-lg py-4 px-6 sm:shadow-md bg-secondary;
   @apply text-lg font-semibold uppercase text-white no-underline;
+  @apply transition-all;
+  @apply hover:shadow-lg hover:shadow-primary/40;
+  @apply focus:opacity-[0.85] focus:shadow-none;
+  @apply active:opacity-[0.85] active:shadow-none;
+  @apply disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
+}
+
+form label {
+  @apply flex flex-col;
+}
+
+form label span {
+  @apply text-gray-600;
+}
+
+form textarea,
+form [type="text"],
+form [type="email"],
+form [type="checkbox"] {
+  @apply mt-1;
+  @apply rounded-md shadow-sm;
+  @apply border-solid border-gray-300;
+  @apply focus:ring focus:ring-secondary focus:ring-opacity-50;
+}
+
+form [type="checkbox"] {
+  @apply w-6 h-6 mt-0;
+  @apply text-secondary;
+}
+
+form [type="submit"] {
+  @apply text-center w-min rounded-lg py-3 px-4 shadow-md bg-secondary;
+  @apply font-semibold uppercase text-white no-underline;
   @apply transition-all;
   @apply hover:shadow-lg hover:shadow-primary/40;
   @apply focus:opacity-[0.85] focus:shadow-none;
