@@ -62,7 +62,7 @@ form [type="checkbox"] {
 
 form [type="submit"] {
   @apply text-center w-min rounded-lg py-3 px-4 shadow-md bg-secondary;
-  @apply font-semibold uppercase text-white no-underline;
+  @apply font-semibold uppercase text-white no-underline border-none;
   @apply transition-all;
   @apply hover:shadow-lg hover:shadow-primary/40;
   @apply focus:opacity-[0.85] focus:shadow-none;
