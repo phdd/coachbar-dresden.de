@@ -6,8 +6,8 @@
       class="grid grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-6">
     <div class="flex flex-col gap-y-4">
       <label>
-        <span>Name</span>
-        <input type="text" name="name" placeholder="Ihr voller Name">
+        <span>Name*</span>
+        <input type="text" name="name" placeholder="Ihr voller Name" required>
       </label>
       <label>
         <span>E-Mail</span>
@@ -22,10 +22,10 @@
         <span class="ml-3" name="bitte-um-rückruf">Ich bitte um Rückruf</span>
       </label>
       <label class="inline-flex flex-row pt-1 xl:-ml-8">
-        <input type="checkbox" name="datenschutz-akzeptiert">
+        <input type="checkbox" name="datenschutz-akzeptiert" required>
         <span class="ml-3">
           Ich akzeptiere die Verarbeitung meiner Daten im Rahmen der
-          <a href="/datenschutz" class="text-secondary">Datenschutzerklärung</a>.
+          <a href="/datenschutz" class="text-secondary">Datenschutzerklärung</a>*.
         </span>
       </label>
     </div>
@@ -33,9 +33,9 @@
       <input type="hidden" name="subject" data-remove-prefix
         value="[coachbar] Nachricht von %{formName} (%{submissionId})"/>
       <label class="flex-grow">
-        <span>Nachricht</span>
+        <span>Nachricht*</span>
         <textarea rows="9" name="nachricht" class="w-auto h-full"
-          placeholder="Ihre Nachricht an Coachbar Dresden"></textarea>
+          placeholder="Ihre Nachricht an Coachbar Dresden" required></textarea>
       </label>
       <div class="w-auto text-center sm:text-right mt-6">
         <button type="submit">
