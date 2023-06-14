@@ -2,26 +2,27 @@
   <div class="prose">
     <h1 class="mb-8">Ihr Kontakt zu uns</h1>
   </div>
-  <form class="grid grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-6">
+  <form name="contact" action="verschickt" method="post" data-netlify="true"
+      class="grid grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-6">
     <div class="flex flex-col gap-y-4">
       <label>
         <span>Name</span>
-        <input type="text" placeholder="Ihr voller Name">
+        <input type="text" name="name" placeholder="Ihr voller Name">
       </label>
       <label>
         <span>E-Mail</span>
-        <input type="text" placeholder="Ihre geschäftliche E-Mail Adresse">
+        <input type="email" name="email" placeholder="Ihre geschäftliche E-Mail Adresse">
       </label>
       <label>
         <span>Telefon</span>
-        <input type="text" placeholder="Ihre geschäftliche Telefonnummer">
+        <input type="text" name="telefon" placeholder="Ihre geschäftliche Telefonnummer">
       </label>
       <label class="inline-flex flex-row pt-3 xl:-ml-8">
-        <input type="checkbox" checked="">
-        <span class="ml-3">Ich bitte um Rückruf</span>
+        <input type="checkbox">
+        <span class="ml-3" name="bitte-um-rückruf">Ich bitte um Rückruf</span>
       </label>
       <label class="inline-flex flex-row pt-1 xl:-ml-8">
-        <input type="checkbox" checked="">
+        <input type="checkbox" name="datenschutz-akzeptiert">
         <span class="ml-3">
           Ich akzeptiere die Verarbeitung meiner Daten im Rahmen der
           <a href="/datenschutz" class="text-secondary">Datenschutzerklärung</a>.
@@ -31,7 +32,7 @@
     <div class="flex flex-col justify-start items-stretch">
       <label class="flex-grow">
         <span>Nachricht</span>
-        <textarea rows="9" class="w-auto h-full"
+        <textarea rows="9" name="nachricht" class="w-auto h-full"
           placeholder="Ihre Nachricht an Coachbar Dresden"></textarea>
       </label>
       <div class="w-auto text-center sm:text-right">
@@ -44,5 +45,7 @@
         </a>
       </div>
     </div>
+    <input type="hidden" name="subject" data-remove-prefix
+      value="[coachbar] Nachricht von %{formName} (%{submissionId})"/>
   </form>
 </section>
