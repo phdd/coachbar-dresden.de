@@ -2,7 +2,7 @@
   <div class="prose">
     <h1 class="mb-8">Ihr Kontakt zu uns</h1>
   </div>
-  <form name="contact" action="verschickt" method="post" data-netlify="true"
+  <form name="contact"
       class="grid grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-6">
     <div class="flex flex-col gap-y-4">
       <label>
@@ -37,8 +37,8 @@
         <textarea rows="9" name="nachricht" class="w-auto h-full"
           placeholder="Ihre Nachricht an Coachbar Dresden"></textarea>
       </label>
-      <div class="w-auto text-center sm:text-right">
-        <button href="" type="submit" class="mt-6 inline-flex gap-4">
+      <div class="w-auto text-center sm:text-right mt-6">
+        <button type="submit">
           {{ partial "icons/icon" (dict
             "name" "paper-plane"
             "vendor" "fas"
@@ -47,5 +47,67 @@
         </button>
       </div>
     </div>
+    <div id="contact-success" class="toast hidden">
+      <p class="text-secondary border-secondary">
+        <span class="flex-shrink-0">
+          {{ partial "icons/icon" (dict
+            "name" "circle-exclamation"
+            "vendor" "fas"
+            "className" "h-6 w-6 mr-4" )}}
+        </span>
+        <span class="w-64">Ihre Nachricht wurde erfolgreich verschickt.</span>
+      </p>
+    </div>
+    <div id="contact-failure" class="toast hidden">
+      <p class="text-red-900 border-red-900">
+        <span class="flex-shrink-0">
+          {{ partial "icons/icon" (dict
+            "name" "circle-exclamation"
+            "vendor" "fas"
+            "className" "h-6 w-6 mr-4" )}}
+        </span>
+        <span class="w-72">Beim Versenden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</span>
+      </p>
+    </div>
   </form>
 </section>
+<script>
+  const handleSubmissionResult = (success) => {
+    const form = document.querySelector("form[name='contact']")
+    let toast;
+
+    if (success) {
+      form.querySelectorAll("input, textarea, button")
+        .forEach((input) => input.disabled = true);
+
+      toast = document.getElementById("contact-success");
+    } else {
+      toast = document.getElementById("contact-failure");
+    }
+
+    toast.classList.remove("hidden");
+    setTimeout(() => toast.classList.add("hidden"), 5000);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  
+    const form = event.target;
+    const data = new FormData(form);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(data).toString(),
+    })
+      .then(({ ok }) => handleSubmissionResult(ok))
+      .catch((error) => {
+        console.error(error);
+        handleSubmissionResult(false);
+      });
+  };
+  
+  document
+    .querySelector("form[name='contact']")
+    .addEventListener("submit", handleSubmit);
+</script>

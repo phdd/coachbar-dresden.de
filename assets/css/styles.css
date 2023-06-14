@@ -63,9 +63,19 @@ form [type="checkbox"] {
 form [type="submit"] {
   @apply text-center w-min rounded-lg py-3 px-4 shadow-md bg-secondary;
   @apply font-semibold uppercase text-white no-underline border-none;
-  @apply transition-all;
+  @apply transition-all inline-flex gap-4;
   @apply hover:shadow-lg hover:shadow-primary/40;
   @apply focus:opacity-[0.85] focus:shadow-none;
   @apply active:opacity-[0.85] active:shadow-none;
   @apply disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
+}
+
+.toast {
+  @apply fixed bottom-12 left-0 right-0;
+}
+
+.toast p {
+  @apply px-5 py-4 bg-white drop-shadow-xl rounded-md;
+  @apply mx-auto max-w-min;
+  @apply flex justify-between border-solid border-2 border-opacity-20;
 }
