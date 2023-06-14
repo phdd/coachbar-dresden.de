@@ -18,8 +18,8 @@
         <input type="text" name="telefon" placeholder="Ihre geschäftliche Telefonnummer">
       </label>
       <label class="inline-flex flex-row pt-3 xl:-ml-8">
-        <input type="checkbox">
-        <span class="ml-3" name="bitte-um-rückruf">Ich bitte um Rückruf</span>
+        <input type="checkbox" name="bitte-um-rückruf">
+        <span class="ml-3">Ich bitte um Rückruf</span>
       </label>
       <label class="inline-flex flex-row pt-1 xl:-ml-8">
         <input type="checkbox" name="datenschutz-akzeptiert" required>
@@ -107,7 +107,20 @@
       });
   };
   
+  const handleCtaCallMe = () => {
+    const form = document.querySelector("form[name='contact']");
+
+    form.querySelector("input[name='bitte-um-rückruf']").setAttribute("checked", "");
+    form.querySelector("input[name='telefon']").focus();
+  };
+
   document
     .querySelector("form[name='contact']")
     .addEventListener("submit", handleSubmit);
+
+  const ctaCallMe = document.getElementById('cta-call-me');
+
+  if (ctaCallMe) {
+    ctaCallMe.addEventListener("click", handleCtaCallMe)
+  }
 </script>
