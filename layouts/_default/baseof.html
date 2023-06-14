@@ -4,7 +4,9 @@
     {{ partial "head" . }}
   </head>
   <body class="relative">
+    {{ if not hugo.IsProduction }}
     {{- partial "dev/dev-tools.html" . -}}
+    {{ end }}
     <header>
       {{ partial "header" . }}
     </header>
