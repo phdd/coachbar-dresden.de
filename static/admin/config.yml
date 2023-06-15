@@ -11,23 +11,12 @@ media_folder: "static/media" # Media files will be stored in the repo under imag
 public_folder: "/media" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: seite
-    label: Seite
+  - name: webseite
+    label: Webseite
     files:
-      - label: "infos"
-        name: infos
-        file: "data/infos.yml"
-        editor:
-          preview: false
-        fields: 
-          - { label: Unternehmen, name: Unternehmen, widget: string }
-          - { label: Ansprechpartner, name: Ansprechpartner, widget: string }
-          - { label: Adresse, name: Adresse, widget: markdown }
-          - { label: Telefon, name: Telefon, widget: string }
-          - { label: E-Mail, name: Mail, widget: string }
 
-      - label: "Startseite"
-        name: "coachbar"
+      - label: Startseite
+        name: startseite
         file: "data/home.yml"
         editor:
           preview: false
@@ -57,24 +46,34 @@ collections:
               - { label: Text, name: text, widget: text }
               - { label: Bild, name: image, widget: image, default: "/media/haltlos.png", allow_multiple: false, hint: "400 x 550 ist optimal" }
 
-      - label: "Datenschutz"
-        name: "datenschutz"
-        file: "content/datenschutz.md"
+      - name: infos
+        label: Infos & Kontakt
+        file: "data/infos.yml"
         editor:
           preview: false
-        fields:
-          - { label: Titel, name: title, widget: string }
-          - { label: Inhalt, name: body, widget: markdown }
+        fields: 
+          - { label: Unternehmen, name: Unternehmen, widget: string }
+          - { label: Ansprechpartner, name: Ansprechpartner, widget: string }
+          - { label: Adresse, name: Adresse, widget: markdown }
+          - { label: Telefon, name: Telefon, widget: string }
+          - { label: E-Mail, name: Mail, widget: string }
 
-  # - name: "blog" # Used in routes, e.g., /admin/collections/blog
-  #   label: "Blog" # Used in the UI
-  #   folder: "content/blog" # The path to the folder where the documents are stored
-  #   create: true # Allow users to create new documents in this collection
-  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  #   editor:
-  #     preview: false
-  #   fields: # The fields for each document, usually in front matter
-  #     - { label: 'Titel', name: 'title', widget: 'string' }
-  #     - { label: 'Veröffentlichung', name: 'date', widget: 'datetime' }
-  #     - { label: 'Beschreibung', name: 'description', widget: 'string' }
-  #     - { label: 'Inhalt', name: 'body', widget: 'markdown' }
+  - name: unterseiten
+    label: Unterseiten
+    folder: content
+    create: true
+    slug: "{{ slug }}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false
+    fields:
+      - { label: 'Titel', name: 'title', widget: 'string' }
+      - { label: 'Beschreibung', name: 'description', widget: 'text' }
+      - name: navigation
+        label: Navigation
+        widget: object
+        summary: "{{fields.title}}"
+        fields:
+          - { label: position, name: position, widget: select, options: ['Fußzeile', 'Hauptmenü'], default: 'Hauptmenü' }
+          - { label: Gewicht, name: weight, widget: number }
+          - { label: Titel, name: title, widget: string }
+      - { label: 'Inhalt', name: 'body', widget: 'markdown' }
