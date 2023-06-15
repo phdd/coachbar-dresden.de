@@ -1,5 +1,5 @@
 <section class="hidden md:flex overflow-hidden">
-  <img src="/bg-logo.png" alt="{{ $.Site.Data.general.Unternehmen }} Logo" class="mx-auto" />
+  <img src="/bg-logo.png" alt="{{ $.Site.Data.infos.Unternehmen }} Logo" class="mx-auto" />
 </section>
 <nav class="relative bg-white border-solid border-0 md:border-t-2 md:border-b-2 border-gray-300">
   <div class="container mx-auto max-w-6xl">
@@ -37,9 +37,9 @@
           </div>
         </div>
       </div>
-      <a href="/" class="block md:hidden text-primary font-bold text-lg">{{ $.Site.Data.general.Unternehmen }}</a>
+      <a href="/" class="block md:hidden text-primary font-bold text-lg">{{ $.Site.Data.infos.Unternehmen }}</a>
       <div class="group flex space-x-2 md:space-x-4">
-        <a class="p-3 bg-secondary rounded-md shadow-md" role="button" href="tel:{{ $.Site.Data.general.Telefon }}">
+        <a class="p-3 bg-secondary rounded-md shadow-md" role="button" href="tel:{{ $.Site.Data.infos.Telefon }}">
           {{ partial "icons/icon" (dict
             "name" "phone"
             "vendor" "fas"
