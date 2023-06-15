@@ -1,7 +1,9 @@
 baseURL = "https://coachbar-dresden.de"
 
-# disableKinds = ["page", "section", "taxonomy", "term"]
-disableKinds = ["taxonomy"]
+disableKinds = ["term"]
+
+[taxonomies]
+
 
 [module]
   [module.hugoVersion]

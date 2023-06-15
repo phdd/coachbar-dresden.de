@@ -62,18 +62,12 @@ collections:
     label: Unterseiten
     folder: content
     create: true
-    slug: "{{ slug }}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{ slug }}"
     editor:
       preview: false
     fields:
       - { label: 'Titel', name: 'title', widget: 'string' }
       - { label: 'Beschreibung', name: 'description', widget: 'text' }
-      - name: navigation
-        label: Navigation
-        widget: object
-        summary: "{{fields.title}}"
-        fields:
-          - { label: position, name: position, widget: select, options: ['Fußzeile', 'Hauptmenü'], default: 'Hauptmenü' }
-          - { label: Gewicht, name: weight, widget: number }
-          - { label: Titel, name: title, widget: string }
+      - { label: Navigation, name: navigation, widget: select, options: ['Hauptmenü', 'Fußzeile', 'versteckt'], default: 'Hauptmenü' }
+      - { label: Rank, name: weight, widget: number }
       - { label: 'Inhalt', name: 'body', widget: 'markdown' }

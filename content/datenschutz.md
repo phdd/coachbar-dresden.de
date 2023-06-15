@@ -1,5 +1,8 @@
 ---
 title: Datenschutzerklärung
+linkTitle: Datenschutz
+navigation: Fußzeile
+weight: 2
 ---
 
 Der Umgang und Schutz Ihrer Daten ist bei uns eine Selbstverständlichkeit.
