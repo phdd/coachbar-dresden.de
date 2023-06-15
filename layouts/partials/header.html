@@ -16,24 +16,12 @@
             <a class="hidden md:flex flex-col md:flex-row {{ if eq .RelPermalink "/" }}active{{ end }}" href="/">
               coachbar
             </a>
-            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/anl%C3%A4sse" }}active{{ end }}" href="/anlässe">
-              Anlässe
+            {{ $current := .RelPermalink }}
+            {{ range (where .Site.RegularPages "Params.navigation" "Hauptmenü") }}
+            <a class="flex flex-col md:flex-row {{ if hasPrefix $current .RelPermalink }}active{{ end }}" href="{{ .RelPermalink }}">
+              {{ .Params.linkTitle }}
             </a>
-            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/philosophie" }}active{{ end }}" href="/philosophie">
-              Philosophie
-            </a>
-            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/praxis" }}active{{ end }}" href="/praxis">
-              Praxis
-            </a>
-            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/lesbar" }}active{{ end }}" href="/lesbar">
-              lesbar
-            </a>
-            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/projekte" }}active{{ end }}" href="/lesbar">
-              Projekte
-            </a>
-            <a class="flex flex-col md:flex-row {{ if hasPrefix .RelPermalink "/persönliches" }}active{{ end }}" href="/lesbar">
-              Persönliches
-            </a>
+            {{ end }}
           </div>
         </div>
       </div>
