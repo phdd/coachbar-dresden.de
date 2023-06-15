@@ -1,8 +1,6 @@
 {{ define "main" }}
-<article class="prose pt-8 pb-2">
-  <h1>{{ .Title }} </h1>
-  <section>
-    {{ .Content }}
-  </section>
-</article>
+<section class="px-6 py-2 pb-6 md:py-6 lg:py-10 prose max-w-full">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</section>
 {{ end }}

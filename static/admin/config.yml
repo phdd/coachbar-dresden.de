@@ -1,5 +1,5 @@
 # TODO
-# local_backend: true
+local_backend: true
 
 backend:
   name: git-gateway
@@ -11,10 +11,22 @@ media_folder: "static/media" # Media files will be stored in the repo under imag
 public_folder: "/media" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - name: "statische-seiten"
-    label: "statische Seiten"
+  - name: "statische-inhalte"
+    label: "statische Inhalte"
     files:
-      - label: "Startseite (coachbar)"
+      - label: "allgm. Informationen"
+        name: general
+        file: "data/general.yml"
+        editor:
+          preview: false
+        fields: 
+          - { label: Unternehmen, name: Unternehmen, widget: string }
+          - { label: Ansprechpartner, name: Ansprechpartner, widget: string }
+          - { label: Adresse, name: Adresse, widget: markdown }
+          - { label: Telefon, name: Telefon, widget: string }
+          - { label: E-Mail, name: Mail, widget: string }
+
+      - label: "Startseite"
         name: "coachbar"
         file: "data/home.yml"
         editor:
@@ -44,6 +56,15 @@ collections:
               - { label: Überschrift, name: title, widget: string }
               - { label: Text, name: text, widget: text }
               - { label: Bild, name: image, widget: image, default: "/media/haltlos.png", allow_multiple: false, hint: "400 x 550 ist optimal" }
+
+      - label: "Datenschutz"
+        name: "datenschutz"
+        file: "content/datenschutz.md"
+        editor:
+          preview: false
+        fields:
+          - { label: Titel, name: title, widget: string }
+          - { label: Inhalt, name: body, widget: markdown }
 
   # - name: "blog" # Used in routes, e.g., /admin/collections/blog
   #   label: "Blog" # Used in the UI

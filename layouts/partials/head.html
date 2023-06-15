@@ -1,5 +1,9 @@
 <title>
-  {{ .Title }}
+  {{ if not .IsHome }}
+    {{ .Title }} | {{ $.Site.Data.general.Unternehmen }}
+  {{ else }}
+    {{ $.Site.Data.general.Unternehmen }}
+  {{ end }}
 </title>
 
 <meta charset="utf-8">
