@@ -28,7 +28,7 @@ collections:
             fields:
               - { label: Überschrift, name: title, widget: string }
               - { label: Text, name: text, widget: text }
-              - { label: Bild, name: image, widget: image, default: "/media/portrait.png", allow_multiple: false, hint: "490 x 640 ist optimal" }
+              - { label: Bild, name: image, widget: image, default: "/media/portrait.png", allow_multiple: false, hint: "500 x 650 ist optimal" }
               - label: Leistungen
                 name: features
                 widget: list
