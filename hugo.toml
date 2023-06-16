@@ -2,6 +2,7 @@ baseURL = "https://coachbar-dresden.de"
 
 disableKinds = ["term", "taxonomy"]
 enableGitInfo = true
+allowUnsafe = true
 
 [module]
   [module.hugoVersion]

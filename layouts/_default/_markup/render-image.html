@@ -1,0 +1,6 @@
+{{ $classes := "" }}
+{{ if in .Text "rechts" }}{{ $classes = printf "%s float-right ml-0 sm:ml-6" $classes }}{{ end }}
+{{ if in .Text "links"  }}{{ $classes = printf "%s float-left mr-0 sm:mr-6" $classes  }}{{ end }}
+<div class="{{ $classes }} w-full sm:w-1/2 mb-4 sm:shadow-lg rounded-none sm:rounded-lg">
+  <img class="m-0 rounded-none sm:rounded-lg" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
+</div>

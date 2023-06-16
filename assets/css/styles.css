@@ -19,6 +19,10 @@ li h2, .prose h2, h2.prose {
   @apply text-lg font-semibold mb-1 text-primary;
 }
 
+.prose h2 {
+  @apply mt-0;
+}
+
 li p {
   @apply text-base text-gray-600;
 }

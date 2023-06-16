@@ -10,5 +10,80 @@
   <body>
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      /*  https://decapcms.org/docs/customization/  */
+      /*  CMS.registerPreviewStyle("/css/styles.css");  */
+
+      CMS.registerEditorComponent({
+        id: "zitat",
+        label: "Zitat",
+        fields: [{
+                name: "text",
+                label: "Text",
+                widget: "string"
+            },
+            {
+                name: "autor",
+                label: "Autor",
+                widget: "string"
+            },
+        ],
+        pattern: /^{{< zitat "([^"]+)" "([^"]+)" >}}/,
+        fromBlock: function(match) {
+            return {
+                text: match[1],
+                autor: match[2],
+            };
+        },
+        toBlock: function(obj) {
+            return `{{< zitat "${obj.text}" "${obj.autor}" >}}`;
+        },
+        toPreview: function(obj) {
+            return `<blockquote class="text-2xl italic font-light text-gray-900 text-center">
+              <p class="mb-2">${obj.text}</p>
+              <cite class="text-sm">&mdash; ${obj.autor}</cite>
+            </blockquote>`;
+        },
+    });
+
+    CMS.registerEditorComponent({
+      id: "vorwärts",
+      label: "Nächste Seite",
+      fields: [{
+              name: "text",
+              label: "Text",
+              widget: "string"
+          },
+          {
+              name: "link",
+              label: "Link",
+              widget: "string"
+          },
+      ],
+      pattern: /^{{< vorwärts "([^"]+)" "([^"]+)" >}}/,
+      fromBlock: function(match) {
+          return {
+              text: match[1],
+              link: match[2],
+          };
+      },
+      toBlock: function(obj) {
+          return `{{< vorwärts "${obj.text}" "${obj.link}" >}}`;
+      },
+      toPreview: function(obj) {
+          return `
+          <div class="flex justify-end mt-6">
+            <a href="${obj.link}" class="opacity-80 flex items-center gap-1">
+              <span>${obj.text}</span>
+              {{ partial "icons/icon" (dict
+                  "name" "chevron-right"
+                  "vendor" "fas"
+                  "className" "h-3 w-3" )}}
+            </a>
+          </div>
+          `;
+      },
+  });
+    </script>
   </body>
 </html>

@@ -1,0 +1,9 @@
+<div class="flex justify-end mt-6">
+  <a href="{{ .Get 1 }}" class="opacity-80 flex items-center gap-1">
+    <span>{{ .Get 0 }}</span>
+    {{ partial "icons/icon" (dict
+        "name" "chevron-right"
+        "vendor" "fas"
+        "className" "h-3 w-3" )}}
+  </a>
+</div>
