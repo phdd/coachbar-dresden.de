@@ -18,7 +18,7 @@ weight: 1
 
 [zur Philosophie]({{< ref "philosophie" >}})
 <!-- 
-als shortcode? Partial?
+als shortcode? Partial?[label](https://removal.ai/)
 <a href="/anlässe/" class="opacity-60 flex items-center gap-2">
     <span>mehr zu Anlässen erfahren</span>
     {{ partial "icons/icon" (dict
