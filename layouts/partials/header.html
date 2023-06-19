@@ -27,13 +27,13 @@
       </div>
       <a href="/" class="block md:hidden text-primary font-bold text-lg">{{ $.Site.Data.infos.Unternehmen }}</a>
       <div class="group flex space-x-2 md:space-x-4">
-        <a class="p-3 bg-secondary rounded-md shadow-md" role="button" href="mailto:{{ $.Site.Data.Mail }}">
+        <a class="p-3 bg-secondary rounded-md shadow-md" role="button" href="mailto:{{ $.Site.Data.Mail }}" aria-label="E-Mail schreiben">
           {{ partial "icons/icon" (dict
             "name" "envelope"
             "vendor" "fas"
             "className" "h-6 w-6 text-white" )}}
         </a>
-        <a class="p-3 bg-secondary rounded-md shadow-md" role="button" href="tel:{{ $.Site.Data.infos.Telefon }}">
+        <a class="p-3 bg-secondary rounded-md shadow-md" role="button" href="tel:{{ $.Site.Data.infos.Telefon }}" aria-label="anrufen">
           {{ partial "icons/icon" (dict
             "name" "phone"
             "vendor" "fas"

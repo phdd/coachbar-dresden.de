@@ -5,6 +5,7 @@
 	},
 	"scripts": {
 		"start": "hugo server --disableFastRender",
+		"serve": "npx http-server -p 1313 public",
 		"admin": "npx netlify-cms-proxy-server"
 	},
 	"devDependencies": {
