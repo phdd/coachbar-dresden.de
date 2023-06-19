@@ -1,5 +1,5 @@
 # TODO
-local_backend: true
+local_backend: false
 
 backend:
   name: git-gateway
@@ -9,6 +9,22 @@ backend:
 locale: 'de'
 media_folder: "static/media" # Media files will be stored in the repo under images/uploads
 public_folder: "/media" # The src attribute for uploaded media will begin with /images/uploads
+
+markdownDefaults: &markdown
+  buttons:
+    - bold
+    - italic
+    - link
+    - heading-one
+    - heading-two
+    - heading-three
+    - bulleted-list
+    - numbered-list
+
+  editorComponents:
+    - image
+    - zitat
+    - vorwärts
 
 collections:
   - name: webseite
@@ -54,7 +70,7 @@ collections:
         fields: 
           - { label: Unternehmen, name: Unternehmen, widget: string }
           - { label: Ansprechpartner, name: Ansprechpartner, widget: string }
-          - { label: Adresse, name: Adresse, widget: markdown }
+          - { label: Adresse, name: Adresse, widget: markdown, buttons: [], editorComponents: [] }
           - { label: Telefon, name: Telefon, widget: string }
           - { label: E-Mail, name: Mail, widget: string }
 
@@ -67,7 +83,12 @@ collections:
       preview: false
     fields:
       - { label: 'Titel', name: 'title', widget: 'string' }
+      - { label: 'Titel sichtbar', name: 'titleShown', widget: 'boolean', default: true, hint: "Wenn im Hauptmenü der Menüpunkt bereits fettgedruckt ist, sind Überschriften erster Ebene für die Abschnitte der Seite sinnvoller, als nur den Menüpunkt zu wiederholen. Der *Datenschutz* steht z.B. in der Fußzeile, womit Du ihn als Titel der Seite nicht unmittelbar siehst." }
       - { label: 'Beschreibung', name: 'description', widget: 'text' }
       - { label: Navigation, name: navigation, widget: select, options: ['Hauptmenü', 'Fußzeile', 'versteckt'], default: 'Hauptmenü' }
       - { label: Rank, name: weight, widget: number }
-      - { label: 'Inhalt', name: 'body', widget: 'markdown' }
+      - label: 'Inhalt'
+        <<: *markdown
+        name: 'body'
+        widget: 'markdown'
+        hint: Wenn Du Bilder im Inhalt hast, kannst Du das Wort *rechts*/*links* im alt-Text verwenden um das Bild zu positionieren.

@@ -1,11 +1,12 @@
 ---
 title: Philosophie
+titleShown: false
 linkTitle: Philosophie
 navigation: Hauptmenü
 weight: 2
 ---
 
-## Unsere Idee
+# Unsere Idee
 
 ![Bild links](https://dummyimage.com/600x430/DEE/000)
 
@@ -17,7 +18,7 @@ Wir unterstützen Sie dabei, Probleme zu lösen, Visionen zu entwickeln, Antwort
 
 {{< zitat "Menschliches Leben ist Begegnung" "" >}}
 
-## Unser Vorgehen
+# Unser Vorgehen
 
 ![Bild rechts](https://dummyimage.com/600x260/DEE/000)
 
@@ -31,7 +32,7 @@ Wir freuen uns darauf, Sie kennen zu lernen und Wege mit Ihnen zu beschreiten. B
 
 {{< zitat "Wege entstehen beim Gehen" "Franz Kafka" >}}
 
-## Unsere Methoden
+# Unsere Methoden
 
 ![Bild rechts](https://dummyimage.com/600x480/DEE/000)
 
@@ -45,3 +46,5 @@ Systemisches Denken und Arbeiten liegt uns besonders am Herzen. Es drückt sich 
 Transparenz und Diskretion sind für uns eine Selbstverständlichkeit
 
 {{< zitat "Das Reden über Probleme lässt die Probleme größer werden, reden wir über Lösungen, werden die Lösungen wahrscheinlicher!" "" >}}
+
+{{< vorwärts "unsere Partner und Klienten" "/praxis" >}}

@@ -16,7 +16,7 @@
 
       CMS.registerEditorComponent({
         id: "zitat",
-        label: "Zitat",
+        label: "Zitat mit Autor",
         fields: [{
                 name: "text",
                 label: "Text",
@@ -28,7 +28,7 @@
                 widget: "string"
             },
         ],
-        pattern: /^{{< zitat "([^"]+)" "([^"]+)" >}}/,
+        pattern: /^{{< zitat "([^"]+)" "([^"]*)" >}}/,
         fromBlock: function(match) {
             return {
                 text: match[1],
@@ -48,7 +48,7 @@
 
     CMS.registerEditorComponent({
       id: "vorwärts",
-      label: "Nächste Seite",
+      label: "Link zur nächsten Seite",
       fields: [{
               name: "text",
               label: "Text",
