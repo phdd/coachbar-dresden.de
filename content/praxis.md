@@ -19,7 +19,7 @@ weight: 3
 - die in besonderen beruflichen oder privaten Konflikt- oder Belastungssituationen, die Balance wieder herstellen oder seelische Verletzung und Ärger bewältigen möchten
 - die in gesundheitlichen Problemsituationen die Ressourcen für die Bewältigung von Krankheit erkennen möchten
 
-<!-- # Klientenspiegel
+# Klientenspiegel
 
 Hier können Sie ausgewählte Aussagen von Klienten zu unserer Arbeit in Einzel- und Teamcoachings lesen. Kontakte zu Klienten oder Unternehmen können bei Interesse gern hergestellt werden.
 
@@ -44,6 +44,4 @@ Hier können Sie ausgewählte Aussagen von Klienten zu unserer Arbeit in Einzel-
 - „Es wirkt auch in meiner Art, zu führen!“
 - „Es ist (im Team) vieles in Bewegung gekommen. Die Dinge regulieren sich wie von allein.“
 - „Da war eine Blockade (im Team), die ist jetzt gelöst.“
-- In einem Abschlussgespräch: „Ich coache mich jetzt selbst...“ -->
-
-{{< vorwärts "lesbares für Sie" "/lesbar" >}}
+- In einem Abschlussgespräch: „Ich coache mich jetzt selbst...“

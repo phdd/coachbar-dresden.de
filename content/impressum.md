@@ -1,5 +1,6 @@
 ---
 title: Impressum
+titleShown: true
 linkTitle: Impressum
 navigation: Fußzeile
 weight: 1
