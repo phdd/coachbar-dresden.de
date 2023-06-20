@@ -1,6 +1,5 @@
 ---
 title: Datenschutzerklärung
-titleShown: true
 headless: false
 linkTitle: Datenschutz
 navigation: Fußzeile

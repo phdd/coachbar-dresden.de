@@ -1,6 +1,5 @@
 ---
 title: Impressum
-titleShown: true
 headless: false
 linkTitle: Impressum
 navigation: Fußzeile

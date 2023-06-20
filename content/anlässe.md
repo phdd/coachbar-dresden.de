@@ -1,13 +1,12 @@
 ---
-title: Anlässe
-titleShown: false
+title: Bereiche des Coachings im Überblick
 headless: false
 linkTitle: Anlässe
 navigation: Hauptmenü
 weight: 1
 ---
 
-# Führungscoaching
+## Führungscoaching
 
 ![Bild rechts](https://dummyimage.com/600x400/DEE/000)
 
@@ -23,7 +22,7 @@ Einem Mobile gleich können Lösungen durch die Anstöße im Coaching in das ges
 
 {{< zitat "Vertrauen führt!" "Sprenger" >}}
 
-# Teamcoaching
+## Teamcoaching
 
 ![Bild links](https://dummyimage.com/600x400/DEE/000)
 
@@ -38,7 +37,7 @@ Wir nutzen flexibel Methoden der Organisations- und Teamentwicklung und des syst
 
 {{< zitat "Das Ganze ist mehr als die Summe seiner Teile" "" >}}
 
-# Persönliche Entwicklung
+## Persönliche Entwicklung
 
 ![Bild rechts](https://dummyimage.com/600x650/DEE/000)
 
@@ -56,7 +55,7 @@ Es ist möglich, Ressourcen und Stärken, die in bestimmten Bereichen zur Verfü
 
 {{< zitat "Das Leben ist ein Traum. Übernimm die volle Verantwortung." "Indianische Weisheit" >}}
 
-# Balance und Gesundheit
+## Balance und Gesundheit
 
 Durch verschiedene Anforderungen geraten wir ab und zu aus unserer Balance. Häufig nur kurzfristig, manchmal aber auch länger. Schwierig wird es, wenn dieser Zustand anhält, „normal“ wird. Unsere Körper spiegelt uns das, was ihm fehlt. Wichtig ist, die Signale des Körpers wahrzunehmen, die Sprache des Körpers zu verstehen und bewusst zu reagieren. Gesundheit ist für uns kein gegebener Zustand. Es ist ein ständiger Prozess, Wohlbefinden auf verschiedenen Ebenen des Lebens zu schaffen. Ein Prozess, der lebenslang bewusst gestaltet werden kann, der Entwicklung und Anpassung bedarf.
 
@@ -68,7 +67,7 @@ Wir coachen einzelne Personen, die sich ihren Lebens- und Arbeitsstil bewusst ma
 
 {{< zitat "Der Körper ist der Spiegel meiner Seele" "" >}}
 
-# Familie und Partnerschaft
+## Familie und Partnerschaft
 
 ![Bild rechts](https://dummyimage.com/600x400/DEE/000)
 

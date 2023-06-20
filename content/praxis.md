@@ -1,13 +1,12 @@
 ---
-title: Praxis
-titleShown: false
+title: Unsere Coaching-Praxis
 headless: false
 linkTitle: Praxis
 navigation: Hauptmenü
 weight: 3
 ---
 
-# Partner & Klienten
+## Partner & Klienten
 
 *Wir arbeiten gern mit Menschen ...*
 
@@ -20,7 +19,7 @@ weight: 3
 - die in besonderen beruflichen oder privaten Konflikt- oder Belastungssituationen, die Balance wieder herstellen oder seelische Verletzung und Ärger bewältigen möchten
 - die in gesundheitlichen Problemsituationen die Ressourcen für die Bewältigung von Krankheit erkennen möchten
 
-# Klientenspiegel
+## Klientenspiegel
 
 Hier können Sie ausgewählte Aussagen von Klienten zu unserer Arbeit in Einzel- und Teamcoachings lesen. Kontakte zu Klienten oder Unternehmen können bei Interesse gern hergestellt werden.
 
