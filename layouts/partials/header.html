@@ -1,11 +1,11 @@
 <section class="hidden md:flex overflow-hidden">
-  <img src="/bg-logo.webp" alt="{{ $.Site.Data.infos.Unternehmen }} Logo" class="mx-auto" />
+  <img src="/bg-logo.webp" alt="{{ $.Site.Data.infos.Unternehmen }} Logo" class="mx-auto" width="1449" height="399" />
 </section>
 <nav class="relative bg-white border-solid border-0 md:border-t-2 md:border-b-2 border-gray-300">
   <div class="container mx-auto max-w-6xl">
     <div class="flex flex-row justify-between items-center py-2 px-4">
       <div class="group flex flex-col items-center">
-        <a class="py-2 md:hidden opacity-100 hover:opacity-60" rel="nofollow">
+        <a href="/" onclick="event.preventDefault();" class="py-2 md:hidden opacity-100 hover:opacity-60" rel="nofollow" aria-label="Hauptmenü anzeigen">
           {{ partial "icons/icon" (dict
             "name" "bars"
             "vendor" "fas"

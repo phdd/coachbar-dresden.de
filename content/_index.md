@@ -1,6 +1,6 @@
 ---
 headless: true
-
+description: Professionelles systemisches Coaching, beruflich und privat. Führungskräfte-, Team- und Organisationsentwicklung
 first:
   image: /media/portrait.webp
   title: systemische Beratung und Coaching

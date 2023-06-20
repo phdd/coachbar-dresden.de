@@ -37,6 +37,7 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: 'Beschreibung', name: 'description', widget: 'text', hint: "Die Beschreibung wird in den Suchergebnissen angezeigt. Sie sollte nicht länger als 160 Zeichen sein." }
           - label: erster Abschnitt
             name: first
             widget: object
@@ -86,7 +87,7 @@ collections:
       - { label: Headless, name: headless, widget: hidden, default: false }
       - { label: 'Titel', name: 'title', widget: 'string' }
       - { label: 'Titel sichtbar', name: 'titleShown', widget: 'boolean', default: true, hint: "Wenn im Hauptmenü der Menüpunkt bereits fettgedruckt ist, sind Überschriften erster Ebene für die Abschnitte der Seite sinnvoller, als nur den Menüpunkt zu wiederholen. Der *Datenschutz* steht z.B. in der Fußzeile, womit Du ihn als Titel der Seite nicht unmittelbar siehst." }
-      - { label: 'Beschreibung', name: 'description', widget: 'text' }
+      - { label: 'Beschreibung', name: 'description', widget: 'text', hint: "Die Beschreibung wird in den Suchergebnissen angezeigt. Sie sollte nicht länger als 160 Zeichen sein." }
       - { label: Navigation, name: navigation, widget: select, options: ['Hauptmenü', 'Fußzeile', 'versteckt'], default: 'Hauptmenü' }
       - { label: Rank, name: weight, widget: number }
       - label: 'Inhalt'
