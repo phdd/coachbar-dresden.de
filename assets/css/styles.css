@@ -12,7 +12,7 @@ a, a.svg {
 }
 
 a.active {
-  @apply opacity-100 font-bold;
+  @apply opacity-100 font-bold text-primary;
 }
 
 li h2, .prose h2, h2.prose {
