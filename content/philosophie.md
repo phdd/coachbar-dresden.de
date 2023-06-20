@@ -1,6 +1,7 @@
 ---
 title: Philosophie
 titleShown: false
+headless: false
 linkTitle: Philosophie
 navigation: Hauptmenü
 weight: 2

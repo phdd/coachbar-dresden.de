@@ -1,6 +1,7 @@
 ---
 title: Anlässe
 titleShown: false
+headless: false
 linkTitle: Anlässe
 navigation: Hauptmenü
 weight: 1

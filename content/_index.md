@@ -1,3 +1,6 @@
+---
+headless: true
+
 first:
   image: /media/portrait.png
   title: systemische Beratung und Coaching
@@ -36,3 +39,4 @@ second:
     Coaching ist für uns ein lebendiges Miteinander zwischen Klienten und Coach. Es geht um die Ziele und Aufgaben des Klienten, des Teams oder der Organisation. Wir berücksichtigen dabei Wechselwirkungen und Zusammenhänge zwischen den Lebens- und Arbeitsbereichen.
     Um selbst Gestalter des eigenen Lebens zu werden, ermutigen wir dazu, die eigenen Anteile daran zu erkennen, wie sich Lebenssituationen entwickeln, wie wir handeln und welche Entscheidungen wir treffen.
     Wir begleiten Sie dabei, Lösungen zu finden und Entwicklungen zu gestalten.
+---

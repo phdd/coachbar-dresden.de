@@ -33,7 +33,7 @@ collections:
 
       - label: Startseite
         name: startseite
-        file: "data/home.yml"
+        file: "content/_index.md"
         editor:
           preview: false
         fields:
@@ -79,9 +79,11 @@ collections:
     folder: content
     create: true
     slug: "{{ slug }}"
+    filter: {field: "headless", value: false }
     editor:
       preview: false
     fields:
+      - { label: Headless, name: headless, widget: hidden, default: false }
       - { label: 'Titel', name: 'title', widget: 'string' }
       - { label: 'Titel sichtbar', name: 'titleShown', widget: 'boolean', default: true, hint: "Wenn im Hauptmenü der Menüpunkt bereits fettgedruckt ist, sind Überschriften erster Ebene für die Abschnitte der Seite sinnvoller, als nur den Menüpunkt zu wiederholen. Der *Datenschutz* steht z.B. in der Fußzeile, womit Du ihn als Titel der Seite nicht unmittelbar siehst." }
       - { label: 'Beschreibung', name: 'description', widget: 'text' }

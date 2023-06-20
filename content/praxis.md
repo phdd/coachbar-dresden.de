@@ -1,6 +1,7 @@
 ---
 title: Praxis
 titleShown: false
+headless: false
 linkTitle: Praxis
 navigation: Hauptmenü
 weight: 3
