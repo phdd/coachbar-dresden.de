@@ -1,8 +1,8 @@
 <title>
   {{ if not .IsHome }}
-    {{ .Title }} | {{ $.Site.Data.infos.Unternehmen }}
+    {{ .Title }} - {{ $.Site.Data.infos.Unternehmen }}
   {{ else }}
-    {{ $.Site.Data.infos.Unternehmen }} | {{ .Params.first.title }}
+    {{ $.Site.Data.infos.Unternehmen }} - {{ .Params.first.title }}
   {{ end }}
 </title>
 
