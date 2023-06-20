@@ -69,6 +69,18 @@ Sofern wir im Rahmen unserer Verarbeitung Daten gegenüber anderen Personen und 
 
 Sofern wir Dritte mit der Verarbeitung von Daten auf Grundlage eines sog. *Auftragsverarbeitungsvertrages* beauftragen, geschieht dies auf Grundlage des Art. 28 DSGVO.
 
+### Bereitstellung der Webseite
+
+Personenbezogene Daten, die über diese Website erhoben werden, werden auf den Servern des/der Hoster(s) gespeichert. Dabei kann es sich unter anderem um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Zugriffe auf die Website und andere Daten handeln, die über die Website generiert werden.
+
+Im Rahmen einer Verarbeitung im Auftrag erbringt ein Drittanbieter, Netlify, für uns Dienstleistungen im Zusammenhang mit dem Hosting und der Anzeige der Website. Dies dient der Wahrung unserer im Rahmen einer Interessenabwägung überwiegenden berechtigten Interessen an der korrekten Darstellung unseres Angebots. 
+
+Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren Interessenten und Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Soweit eine entsprechende Einwilligung eingeholt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z.B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die Einwilligung kann jederzeit widerrufen werden.
+
+Alle Daten, die im Rahmen der Nutzung dieser Website oder in den dafür vorgesehenen Formularen wie nachfolgend beschrieben erhoben werden, werden auf seinen Servern verarbeitet. Eine Verarbeitung auf anderen Servern findet nur in dem hier beschriebenen Rahmen statt.
+
+Um den Schutz Ihrer Persönlichkeitsrechte auch im Rahmen dieser Datenübermittlungen zu gewährleisten, verwenden wir bei der Ausgestaltung der Vertragsverhältnisse mit Netlify die Standardvertragsklauseln der EU-Kommission gem. Art. 46 Abs. 2 lit. c) DSGVO. Diese können unter https://www.netlify.com/legal/netlify-dpa.pdf abgerufen werden.
+
 ## Übermittlungen in Drittländer
 
 Sofern wir Daten in einem Drittland (d.h. außerhalb der Europäischen Union (EU) oder des Europäischen Wirtschaftsraums (EWR)) verarbeiten oder dies im Rahmen der Inanspruchnahme von Diensten Dritter oder Offenlegung, bzw. Übermittlung von Daten an Dritte geschieht, erfolgt dies nur, wenn es zur Erfüllung unserer (vor)vertraglichen Pflichten, auf Grundlage Ihrer Einwilligung, aufgrund einer rechtlichen Verpflichtung oder auf Grundlage unserer berechtigten Interessen geschieht. Vorbehaltlich gesetzlicher oder vertraglicher Erlaubnisse, verarbeiten oder lassen wir die Daten in einem Drittland nur beim Vorliegen der besonderen Voraussetzungen der Art. 44 ff. DSGVO verarbeiten. D.h. die Verarbeitung erfolgt z.B. auf Grundlage besonderer Garantien, wie der offiziell anerkannten Feststellung eines der EU entsprechenden Datenschutzniveaus (z.B. für die USA durch das *Privacy Shield*) oder Beachtung offiziell anerkannter spezieller vertraglicher Verpflichtungen (so genannte *Standardvertragsklauseln*).

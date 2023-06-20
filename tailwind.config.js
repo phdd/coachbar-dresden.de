@@ -10,7 +10,14 @@ module.exports = {
 				'primary': '#2f435b',
 				'secondary': '#00939B',
 				'tertiary': '#E9EEFE'
-			}
+			},
+			typography: ({ theme }) => ({
+        pink: {
+          css: {
+            '--tw-prose-links': theme('colors.primary')
+          }
+        }
+      })
 		}
 	}
 };

@@ -8,7 +8,7 @@ body {
 }
 
 a, a.svg {
-  @apply opacity-100 hover:opacity-80 text-primary;
+  @apply opacity-100 hover:opacity-80;
 }
 
 a.active {
@@ -21,6 +21,10 @@ li h2, .prose h2, h2.prose {
 
 .prose h2 {
   @apply mt-0;
+}
+
+.prose h3 {
+  @apply text-base font-semibold mb-1 text-primary;
 }
 
 li p {
