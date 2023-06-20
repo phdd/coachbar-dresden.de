@@ -93,4 +93,4 @@ collections:
         <<: *markdown
         name: 'body'
         widget: 'markdown'
-        hint: Wenn Du Bilder im Inhalt hast, kannst Du das Wort *rechts*/*links* im alt-Text verwenden um das Bild zu positionieren.
+        hint: Wenn Du Bilder im Inhalt hast, kannst Du das Wort *rechts*/*links* im alt-Text verwenden um das Bild zu positionieren. Verwende bestenfalls das [WebP-Format](https://developers.google.com/speed/webp?hl=de). Bestehende Bilder kannst Du auch [online konvertieren](https://convertio.co/de/png-webp/).

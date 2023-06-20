@@ -2,7 +2,7 @@
 headless: true
 
 first:
-  image: /media/portrait.png
+  image: /media/portrait.webp
   title: systemische Beratung und Coaching
   text: Wir entwickeln mit Ihnen systemische Lösungen für berufliche und
     persönliche Aufgaben – einzeln, im Team oder innerhalb der Organisation.
@@ -33,7 +33,7 @@ first:
         Geschichte wiederzuentdecken. Wir fördern Verständnis, Vertrauen und
         liebevolle Beziehungen.
 second:
-  image: /media/haltlos.png
+  image: /media/haltlos.webp
   title: systemische Lösungen
   text: |
     Coaching ist für uns ein lebendiges Miteinander zwischen Klienten und Coach. Es geht um die Ziele und Aufgaben des Klienten, des Teams oder der Organisation. Wir berücksichtigen dabei Wechselwirkungen und Zusammenhänge zwischen den Lebens- und Arbeitsbereichen.
