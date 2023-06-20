@@ -2,7 +2,7 @@
   {{ if not .IsHome }}
     {{ .Title }} | {{ $.Site.Data.infos.Unternehmen }}
   {{ else }}
-    {{ $.Site.Data.infos.Unternehmen }}
+    {{ $.Site.Data.infos.Unternehmen }} | {{ .Params.first.title }}
   {{ end }}
 </title>
 
