@@ -74,6 +74,10 @@ collections:
           - { label: Adresse, name: Adresse, widget: markdown, buttons: [], editorComponents: [] }
           - { label: Telefon, name: Telefon, widget: string }
           - { label: E-Mail, name: Mail, widget: string }
+          - label: weitere Links
+            name: sameAs
+            widget: list
+            hint: "Mit Komma getrennte Links zu Xing, LinkedIn, etc."
 
   - name: unterseiten
     label: Unterseiten

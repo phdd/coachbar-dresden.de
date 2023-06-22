@@ -1,4 +1,4 @@
-baseURL = "https://coachbar-dresden.de"
+baseURL = "https://coachbar-dresden.de/"
 
 disableKinds = ["term", "taxonomy"]
 enableGitInfo = true
