@@ -2,11 +2,11 @@
   {
     "@context": "https://schema.org/",
     "@type": "Organization",
-    "@id": "{{ $.Site.BaseURL }}#organization",
+    "@id": "{{ $.Site.BaseURL }}/#organization",
     "url": "{{ $.Site.BaseURL }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ $.Site.BaseURL }}logo.png"
+      "url": "{{ $.Site.BaseURL }}/logo.png"
     },
     "name": "{{ $.Site.Data.infos.Unternehmen }}",
     "sameAs": {{ apply $.Site.Data.infos.sameAs "urlize" "." }}
