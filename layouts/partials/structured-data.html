@@ -9,6 +9,6 @@
       "url": "{{ $.Site.BaseURL }}logo.png"
     },
     "name": "{{ $.Site.Data.infos.Unternehmen }}",
-    "sameAs": [{{ apply $.Site.Data.infos.sameAs "urlize" "." }}]
+    "sameAs": {{ apply $.Site.Data.infos.sameAs "urlize" "." }}
   }
 </script>
