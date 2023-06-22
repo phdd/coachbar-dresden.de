@@ -51,8 +51,8 @@
 <meta property="og:description" content="{{ .Description }}">
 <meta property="twitter:description" content="{{ .Description }}">
 
-<meta property="og:image" content="/social-card.png">
-<meta property="twitter:image" content="/social-card.png">
+<meta property="og:image" content="{{ $.Site.BaseURL }}/social-card.png">
+<meta property="twitter:image" content="{{ $.Site.BaseURL }}/social-card.png">
 
 
 {{ partial "structured-data.html" . }}
