@@ -1,6 +1,7 @@
 ---
 title: Impressum
 headless: false
+keywords: []
 linkTitle: Impressum
 navigation: Fußzeile
 weight: 1

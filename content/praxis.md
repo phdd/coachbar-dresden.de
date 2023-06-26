@@ -1,6 +1,7 @@
 ---
 title: Unsere Coaching-Praxis
 headless: false
+keywords: []
 linkTitle: Praxis
 navigation: Hauptmenü
 weight: 3

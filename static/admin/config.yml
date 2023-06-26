@@ -38,6 +38,10 @@ collections:
           preview: false
         fields:
           - { label: 'Beschreibung', name: 'description', widget: 'text', hint: "Die Beschreibung wird in den Suchergebnissen angezeigt. Sie sollte nicht länger als 160 Zeichen sein." }
+          - label: Keywords
+            name: keywords
+            widget: list
+            hint: "Mit Komma getrennte Liste von Suchmaschinenrelevanten Schlagworten"
           - label: erster Abschnitt
             name: first
             widget: object
@@ -91,6 +95,10 @@ collections:
       - { label: Headless, name: headless, widget: hidden, default: false }
       - { label: 'Titel', name: 'title', widget: 'string' }
       - { label: 'Beschreibung', name: 'description', widget: 'text', hint: "Die Beschreibung wird in den Suchergebnissen angezeigt. Sie sollte nicht länger als 160 Zeichen sein." }
+      - label: Keywords
+        name: keywords
+        widget: list
+        hint: "Mit Komma getrennte Liste von Suchmaschinen-relevanten Schlagworten"
       - { label: Navigation, name: navigation, widget: select, options: ['Hauptmenü', 'Fußzeile', 'versteckt'], default: 'Hauptmenü' }
       - { label: Rank, name: weight, widget: number }
       - label: 'Inhalt'

@@ -1,6 +1,23 @@
 ---
 headless: true
 description: Professionelles systemisches Coaching, beruflich und privat. Führungskräfte-, Team- und Organisationsentwicklung
+keywords:
+  - Sachsen
+  - Dresden
+  - Bettina Wachter
+  - Regina Kühne
+  - Coaching
+  - Coach
+  - Burnout
+  - systemisch
+  - Beratung
+  - psychologisch
+  - Führung
+  - Team
+  - Entwicklung
+  - Organisation
+  - Business
+  - Gesundheit
 first:
   image: /media/portrait.webp
   title: systemische Beratung und Coaching
