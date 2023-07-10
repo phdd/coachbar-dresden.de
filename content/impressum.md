@@ -16,15 +16,10 @@ weight: 1
 Telefon: {{< info "Telefon" >}}  
 E-Mail: {{< info "Mail" >}}  
 
-## Redaktionell verantwortlich
+## Umsatzsteuer
 
-{{< info "Ansprechpartner" >}}  
-{{< info "Adresse" >}}
-
-## EU-Streitschlichtung
-
-Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/.
-Unsere E-Mail-Adresse finden Sie oben im Impressum.
+Umsatzsteuernummer gemäß § 27 a Umsatzsteuergesetz:  
+202/285/10786
 
 ## Verbraucherstreitbeilegung / Universalschlichtungsstelle
 
@@ -33,3 +28,5 @@ Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer 
 ## Umsetzung
 
 [Peter Heisig](https://peter.heisig.rocks)
+
+Quelle: [e-recht24.de](https://www.e-recht24.de)
