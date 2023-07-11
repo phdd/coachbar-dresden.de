@@ -87,7 +87,7 @@ collections:
     label: Unterseiten
     folder: content
     create: true
-    slug: "{{ slug }}"
+    slug: "{{slug}}"
     filter: {field: "headless", value: false }
     editor:
       preview: false
@@ -99,7 +99,8 @@ collections:
         name: keywords
         widget: list
         hint: "Mit Komma getrennte Liste von Suchmaschinen-relevanten Schlagworten"
-      - { label: Navigation, name: navigation, widget: select, options: ['Hauptmenü', 'Fußzeile', 'versteckt'], default: 'Hauptmenü' }
+      - { label: Menü, name: navigation, widget: select, options: ['Hauptmenü', 'Fußzeile', 'versteckt'], default: 'Hauptmenü' }
+      - { label: 'Name im Menü', name: linkTitle, widget: 'string', hint: "Wie soll die Seite im Menü heißen?" }
       - { label: Rank, name: weight, widget: number }
       - label: 'Inhalt'
         <<: *markdown
