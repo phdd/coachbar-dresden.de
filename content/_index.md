@@ -56,4 +56,20 @@ second:
     Coaching ist für uns ein lebendiges Miteinander zwischen Klienten und Coach. Es geht um die Ziele und Aufgaben des Klienten, des Teams oder der Organisation. Wir berücksichtigen dabei Wechselwirkungen und Zusammenhänge zwischen den Lebens- und Arbeitsbereichen.
     Um selbst Gestalter des eigenen Lebens zu werden, ermutigen wir dazu, die eigenen Anteile daran zu erkennen, wie sich Lebenssituationen entwickeln, wie wir handeln und welche Entscheidungen wir treffen.
     Wir begleiten Sie dabei, Lösungen zu finden und Entwicklungen zu gestalten.
+testimonials:
+  - name: Dr. D. Hempelt
+    affiliation: Physikerin, Mikroelektronik
+    text: Ich habe bei Ihnen noch nicht eine Stunde erlebt, die nicht wichtig war! Es war für mich sehr hilfreich.
+  - name: Jens Müller
+    affiliation: stellv. Chefarzt, Psychiatrische Klinik
+    text: Ich freue mich wirklich auf jede einzelne Session, die wir zusammen haben. Sie haben einen großen Wissens- und Erfahrungsschatz und sind dazu noch mit so viel Herz dabei! Was Sie auszeichnet ist, dass Sie nicht irgendein Programm abspulen, sondern dass Sie Flexibilität mitbringen und wirklich zu 100 Prozent bei dem Anderen sind!
+  - name: Kirsten Schmaler
+    affiliation: Chemikerin, Geschäftsführerin Chemieindustrie
+    text: Für mich sind die Gespräche mit Ihnen nie nur die Diskussion tagesaktueller Themen, sondern vielmehr Hilfe zur Selbsthilfe und damit Lebensschule auf Augenhöhe. Durch die genaue Analyse und folgend konkrete Fragen an mich, befähigen Sie mich, selbst Lösungsansätze zu finden und anschließend den Mut zu haben, diese umzusetzen sowie, wenn nötig, auch durchzusetzen. Meine Sichtweise ist heute von großer Gelassenheit und der Sicherheit, schwierige Situationen erfolgreich zu meistern, geprägt. Das ist zweifelsfrei Ihr Verdienst. Lieben Dank dafür.
+  - name: Jens Göckeritz
+    affiliation: Projektmanager, Mikroelektronik
+    text: Durch die Reflexion meiner Themen und Probleme mit Ihnen finde ich einen besseren Umgang damit und finde neue Wege. Dadurch erreiche ich eine Balance in meinem beruflichen Umfeld. Es macht für mich jetzt den Reiz aus, die Menschen in meinem Team mitzunehmen und die Kooperation mit mehr Fingerspitzengefühl zu gestalten!
+  - name: Grit Eisert
+    affiliation: Systemische Kunsttherapeutin
+    text: Das ist für mich echt sehr, sehr wertvoll und extrem hilfreich! Ich bin glücklich, dass ich das erleben darf. Ich werde so abgeholt, dass mein Herz und meine Seele angesprochen werden. Über die Emotion komme ich in die Veränderung. Sie betrachten meine Themen mit mir ganzheitlich und geben mir die Möglichkeit, sie mit Ihrer Begleitung aus verschiedenen Perspektiven zu betrachten. Dadurch komme ich in Lernerfahrung.
 ---

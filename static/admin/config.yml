@@ -1,5 +1,5 @@
 # TODO
-local_backend: false
+local_backend: true
 
 backend:
   name: git-gateway
@@ -66,6 +66,13 @@ collections:
               - { label: Überschrift, name: title, widget: string }
               - { label: Text, name: text, widget: text }
               - { label: Bild, name: image, widget: image, default: "/media/haltlos.png", allow_multiple: false, hint: "400 x 550 ist optimal" }
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: "Rolle und Unternehmen", name: affiliation, widget: string }
+              - { label: Text, name: text, widget: text }
 
       - name: infos
         label: Infos & Kontakt

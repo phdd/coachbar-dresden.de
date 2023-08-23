@@ -1,0 +1,181 @@
+{{/*  https://codepen.io/koheishingai/pen/eYdKPP  */}}
+{{/*  <section class="pt-6 px-6 carousel">
+    <div class="px-6 py-0 pt-16 carousel-inner">
+        {{ range $i, $t := .Params.testimonials }}
+        <input class="carousel-open" type="radio" id="carousel-{{ $i }}" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="max-w-screen-xl mx-auto text-center">
+            <figure class="max-w-screen-md mx-auto">
+                <svg class="h-10 mx-auto mb-3 text-gray-400" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                </svg> 
+                <blockquote>
+                    <p class="text-lg text-gray-900">"{{ $t.text }}"</p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                    <div class="md:flex items-center gap-4 divide-x-2 divide-gray-500">
+                        <div class="font-medium text-gray-900">{{ $t.name }}</div>
+                        <div class="text-sm font-light self-baseline text-gray-500">{{ $t.affiliation }}</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+        {{ end }}
+
+        {{ range $i, $t := .Params.testimonials }}
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-{{ $i }}" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+        {{ end }}
+    </div>
+</section>  */}}
+
+{{/*  https://codepen.io/maheshambure21/pen/qZZrxy  */}}
+<style>
+    .slider {
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+      .slider__nav {
+        width: 12px;
+        height: 12px;
+        margin: 2rem 12px;
+        border-radius: 50%;
+        z-index: 10;
+        background-color: #ccc;
+        outline: 8px solid #ccc;
+        outline-offset: -6px;
+        box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+        cursor: pointer;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+      }
+      .slider__nav:checked {
+        -webkit-animation: check 0.4s linear forwards;
+                animation: check 0.4s linear forwards;
+      }
+      .slider__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400%;
+        height: 100%;
+        -webkit-transition: left 0.4s;
+        transition: left 0.4s;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+      }
+      .slider__contents {
+        height: 100%;
+        text-align: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 2rem;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        -webkit-flex-flow: column nowrap;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+      .slider__image {
+        font-size: 2.7rem;
+            color: #2196F3;
+      }
+      
+      @-webkit-keyframes check {
+        50% {
+          outline-color: #333;
+          box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+        }
+        100% {
+          outline-color: #333;
+          box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+        }
+      }
+      
+      @keyframes check {
+        50% {
+          outline-color: #333;
+          box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+        }
+        100% {
+          outline-color: #333;
+          box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+        }
+      }
+
+      {{ range $i, $t := .Params.testimonials }}
+      .slider__nav:checked:nth-of-type({{ add $i 1 }}) ~ .slider__inner {
+        left: {{ mul -100 $i }}%;
+      }
+      {{ end }}
+</style>
+
+<section class="pt-6">
+    <div class="slider">
+        {{ range $i, $t := .Params.testimonials }}
+        {{ if gt $i 0 }}
+        <input type="radio" name="slider" title="slide{{ $i }}" {{ if eq $i 1 }} checked="checked" {{ end }} class="slider__nav"/>
+        {{ end }}
+        {{ end }}
+
+        <div class="slider__inner">
+          {{ range $i, $t := .Params.testimonials }}
+          <div class="slider__contents max-w-max">
+            <figure class="max-w-lg">
+                <svg class="h-10 mx-auto mb-3 text-gray-400" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                </svg> 
+                <blockquote>
+                    <p class="md:text-lg text-gray-900">{{ .text }}</p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                    {{/*  <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">  */}}
+                    <div class="md:flex items-center gap-4 divide-x-2 divide-gray-500">
+                        <div class="font-medium text-gray-900">{{ .name }}</div>
+                        <div class="text-sm font-light self-baseline text-gray-500">{{ .affiliation }}</div>
+                    </div>
+                </figcaption>
+            </figure>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+</section>
