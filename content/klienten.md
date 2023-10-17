@@ -1,10 +1,10 @@
 ---
-title: Unsere Coaching-Praxis
+title: Klienten Titel
 headless: false
 keywords: []
-linkTitle: Praxis
+linkTitle: unsere Klienten
 navigation: Hauptmenü
-weight: 3
+weight: 4
 ---
 
 ## Partner & Klienten
@@ -46,3 +46,6 @@ Hier können Sie ausgewählte Aussagen von Klienten zu unserer Arbeit in Einzel-
 - „Es ist (im Team) vieles in Bewegung gekommen. Die Dinge regulieren sich wie von allein.“
 - „Da war eine Blockade (im Team), die ist jetzt gelöst.“
 - In einem Abschlussgespräch: „Ich coache mich jetzt selbst...“
+
+**Jens Müller**, stellv. Chefarzt, Psychiatrische Klinik
+> Ich freue mich wirklich auf jede einzelne Session, die wir zusammen haben. Sie haben einen großen Wissens- und Erfahrungsschatz und sind dazu noch mit so viel Herz dabei! Was Sie auszeichnet ist, dass Sie nicht irgendein Programm abspulen, sondern dass Sie Flexibilität mitbringen und wirklich zu 100 Prozent bei dem Anderen sind!

@@ -49,6 +49,10 @@ first:
       descr: Unser Coaching hilft Paaren und Familien, ihre gemeinsame Vision und
         Geschichte wiederzuentdecken. Wir fördern Verständnis, Vertrauen und
         liebevolle Beziehungen.
+    - title: Supervision
+      icon: star
+      link: /anlässe/#supervision
+      descr: In der Supervision begleiten wir Entwicklungen für Berufskollegen, die als Coaches oder in beratenden Berufen arbeiten. Ihre Selbstreflexion steht dabei Zentrum. Das Auflösen von stagnierenden Prozessen bei der Beratung Ihrer Klienten sowie das Erweitern Ihres Methodenrepertoires durch Selbsterfahrung liegen uns ebenso am Herzen.
 second:
   image: /media/haltlos.webp
   title: systemische Lösungen

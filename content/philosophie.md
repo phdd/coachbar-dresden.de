@@ -2,7 +2,7 @@
 title: Philosophie, Vorgehen und Methoden unseres Coachings
 headless: false
 keywords: []
-linkTitle: Philosophie
+linkTitle: unsere Philosophie
 navigation: Hauptmenü
 weight: 2
 ---

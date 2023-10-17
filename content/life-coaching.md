@@ -1,43 +1,10 @@
 ---
-title: Bereiche des Coachings im Überblick
 headless: false
-keywords: []
-linkTitle: Anlässe
+title: Life Coaching anders betitelt
 navigation: Hauptmenü
-weight: 1
+linkTitle: Life Coaching
+weight: 2
 ---
-
-## Führungscoaching
-
-![Bild rechts](https://dummyimage.com/600x400/DEE/000)
-
-Wir arbeiten mit Einzelpersonen aber auch mit Führungsebenen, die ihre Visionen umsetzen, ihre Zusammenarbeit optimieren und mit Freude gut arbeiten möchten.
-
-Im Coaching von Führungskräften und Führungsteams orientieren wir uns an Ihrem konkreten Handlungsbedarf. Es können Aufgaben- und Verantwortungsgrenzen reflektiert und geklärt werden. Rollen- und Beziehungsmuster werden betrachtet, die Ressourcen aller Beteiligten erkundet und eine Führungsvision erarbeitet, die das gemeinsame Handeln leitet. Wir unterstützen Sie dabei, die Energie auf das Wesentliche zu richten, Wege aus verfahrenen Situationen zu finden und den Blick für die Vielfalt der Handlungsmöglichkeiten zu öffnen.
-
-Die Grundlage dieser Entwicklungsprozesse sind die Bedürfnisse und Zielstellungen der Menschen in Führungspositionen und in der gesamten Organisation. Lösungsorientierte, systemische Sichtweisen ermöglichen es, den Verhaltensspielraum zu erweitern und Beziehungen zu gestalten. Werte der Führungstätigkeit wie Vertrauen, Verantwortung, Eigenständigkeit und Wertschätzung werden mit Leben erfüllt. Wir unterstützen dabei, berufliche und private Anforderungen und Ansprüche zu koordinieren und in Balance zu bringen.
-
-Wir nutzen flexibel verschiedene Methoden der Organisationsentwicklung und Moderation, des systemisch lösungsorientierten Arbeitens und Erfahrungen mit Führungskonzepten.
-
-Einem Mobile gleich können Lösungen durch die Anstöße im Coaching in das gesamte System einfließen.
-
-{{< zitat "Vertrauen führt!" "Sprenger" >}}
-
-## Teamcoaching
-
-![Bild links](https://dummyimage.com/600x400/DEE/000)
-
-Wenn „Sand im Getriebe“ ist, Unzufriedenheiten, Energie- und Motivationsverluste sich breit machen, Mitarbeiter, Teams oder Führungskräfte mehr konkurrieren als kooperieren, kann Teamcoaching den Fluss in das ganze System zurückbringen.
-
-Wir nutzen positive Beispiele und gelungene Entwicklungen als Potenziale für anstehende Aufgaben und künftige Entwicklungen, bauen auf Ressourcen auf, lassen Visionen und Ziele entstehen und finden realisierbare, beeinflussbare Handlungsmöglichkeiten.
-
-Perspektivwechsel ermöglichen es, Klarheit über die Quellen von Reibungsverlusten zu erlangen und die Energie auf Wesentliches und auf gemeinsame Ziele und Ideen zu richten.
-
-Individuelle Ressourcen, Potenziale und Bedürfnisse spielen in ihrer Wirkung im Team eine zentrale Rolle. Sinn und Energie können in das Team zurückkehren und gemeinsames, abgestimmtes Handeln ermöglichen.
-Wir nutzen flexibel Methoden der Organisations- und Teamentwicklung und des systemischen Coachings.
-
-{{< zitat "Das Ganze ist mehr als die Summe seiner Teile" "" >}}
-
 ## Persönliche Entwicklung
 
 ![Bild rechts](https://dummyimage.com/600x650/DEE/000)
@@ -82,4 +49,4 @@ Verschiedenartigkeit zu genießen und mit Vertrauen zu leben, sehen wir als Schr
 
 {{< zitat "Denn das Leben ist die Liebe und die ganze Form und Kraft des Lebens besteht in der Liebe" "Johann Gottlieb Fichte" >}}
 
-{{< vorwärts "zu unserer Philosophie" "/philosophie" >}}
+{{< vorwärts "zu unsere Philosophie" "/philosophie" >}}
